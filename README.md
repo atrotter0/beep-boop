@@ -1,4 +1,4 @@
-# Beep Boop
+# Beep! Boop!
 
 #### Epicodus Intro to Programming weekly capstone project, 06/08/2018
 
@@ -6,13 +6,19 @@
 
 ## Description
 
-A user enters a number and certain numbers are converted into "Beep", "Boop", or "I'm sorry, Dave. I'm afraid I can't do that."
+A user enters a number and certain numbers are converted into "Beep!", "Boop!", or "I'm sorry, Dave. I'm afraid I can't do that."
 
 ## Specifications
 
 * Program replaces 0 with "Beep!"
   * Example input: 0
   * Example output: ["Beep!"]
+* Program replaces 1 with "Boop!"
+  * Example input: 1
+  * Example output: ["Boop!"]
+* Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."
+  * Example input: 30
+  * Example output: "I'm sorry, Dave. I'm afraid I can't do that."
 
 ## Setup/Contribution Requirements
 
