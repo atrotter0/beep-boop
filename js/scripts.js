@@ -1,3 +1,9 @@
+function runBeepBoop(input) {
+  var numbers = createNumberRange(input);
+  var result = checkAndReplace(numbers);
+  return result;
+}
+
 function createNumberRange(number) {
   var numberRange = [];
   for(var i = 0; i < number + 1; i++) {
@@ -6,7 +12,7 @@ function createNumberRange(number) {
   return numberRange;
 }
 
-function runBeepBoop(numbers) {
+function checkAndReplace(numbers) {
   for(var i = 0; i < numbers.length; i++) {
     if (divisibleBy3(numbers[i])) {
       newMessage = "I'm sorry, Dave. I'm afraid I can't do that.";
@@ -35,15 +41,17 @@ function numberContains(number, valueToCheck) {
 }
 
 function displayResult(result) {
-  //
+  $("#result-box").hide().fadeIn(800);
+  $("#result").text(result);
 }
 
 $(document).ready(function() {
-  //var input = $("#input").val();
-  var input = 30;
-  var numbers = createNumberRange(input);
-  console.log(numbers);
-  var result = runBeepBoop(numbers);
-  displayResult(result);
-  console.log(result);
+  $("#submit").click(function(e) {
+    e.preventDefault();
+
+    var input = parseInt($("#input").val());
+    var result = runBeepBoop(input);
+    console.log(result);
+    displayResult(result);
+  });
 });
