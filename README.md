@@ -1,6 +1,6 @@
 # Beep! Boop!
 
-#### Epicodus Intro to Programming weekly capstone project, 06/08/2018
+#### Epicodus Intro to Programming independent project, 06/08/2018
 
 #### By Abel Trotter
 
