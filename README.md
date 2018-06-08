@@ -21,7 +21,7 @@ A user enters a number and a range of numbers are displayed, with certain number
   * Example output: Beep! Boop! 2 3
 * Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."
   * Example input: 3
-  * Example output: Beep! Boop! "I'm sorry, Dave. I'm afraid I can't do that."
+  * Example output: Beep! Boop! 2 "I'm sorry, Dave. I'm afraid I can't do that."
 * Program replaces entire number if it contains a 1 or a 0 with specified response (Beep! / Boop!)
   * Example input: 12
   * Example output: Boop!
@@ -29,13 +29,13 @@ A user enters a number and a range of numbers are displayed, with certain number
   * Example output: Beep!
 * Program only allows numbers to be input, and displays message to user if input is not a number.
   * Example input: Todd
-  * Example output: BEEP! BOOP! Only numbers are allowed. Please enter a number.
+  * Example output: Please enter valid input. Numbers should be greater than 0 and include no special characters.
 * Program does not accept negative numbers.
   * Example input: -2
-  * Example output: BEEP! BOOP! Only positive numbers are allowed. Please enter valid input.
+  * Example output: Please enter valid input. Numbers should be greater than 0 and include no special characters.
 * Program does not accept special characters.
   * Example input: 1.23.4^%&
-  * Example output: BEEP! BOOP! Only numbers are allowed. Please enter valid input.
+  * Example output: Please enter valid input. Numbers should be greater than 0 and include no special characters.
 
 ## Setup/Contribution Requirements
 
