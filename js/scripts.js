@@ -7,22 +7,19 @@ function createNumberRange(number) {
 }
 
 function runBeepBoop(numbers) {
-  numbers.ForEach(function(number, index) {
+  numbers.forEach(function(number, index) {
     if (divisibleBy3(number)) {
       newMessage = "I'm sorry, Dave. I'm afraid I can't do that.";
       numbers[index] = newMessage;
-    } else if () {
-      
-    } else if () {
-
     } else {
-      //do nothing
+      //alert("You broke it...");
     }
   });
+  return numbers;
 }
 
 function divisibleBy3(number) {
-  if (number % 3 === 0) return true;
+  if (number % 3 === 0 && number !== 0) return true;
 }
 
 $(document).ready(function() {
