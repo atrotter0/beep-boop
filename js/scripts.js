@@ -58,7 +58,8 @@ function displayResult(result) {
 }
 
 function randomAnimation(element) {
-  var rotationVal = Math.floor((Math.random() * 360) + 1);
+  var rotationVal = Math.floor((Math.random() * 310) + 50);
+  console.log(rotationVal);
   $(element).css("transform", "rotate(" + rotationVal + "deg)");
 }
 
