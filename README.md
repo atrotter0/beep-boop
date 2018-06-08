@@ -53,7 +53,7 @@ A user enters a number and a range of numbers are displayed, with certain number
 ## Links
 
 * [Github Repo] - (https://github.com/atrotter0/beep-boop)
-* [Github Pages] - 
+* [Github Pages] - (https://atrotter0.github.io/beep-boop)
 
 ## License
 
