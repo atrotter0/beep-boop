@@ -42,7 +42,6 @@ function checkAndReplace(numbers) {
       numbers[i] = newMessage;
     }
   }
-  console.log(numbers);
   return numbers.join(" ");
 }
 
@@ -64,7 +63,6 @@ function displayResult(result) {
 
 function randomAnimation(element) {
   var rotationVal = Math.floor((Math.random() * 310) + 50);
-  console.log(rotationVal);
   $(element).css("transform", "rotate(" + rotationVal + "deg)");
 }
 
@@ -77,7 +75,6 @@ $(document).ready(function() {
 
     var input = $("#input").val();
     var result = runBeepBoop(input);
-    console.log(result);
     displayResult(result);
   });
 });

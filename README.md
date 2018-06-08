@@ -21,7 +21,7 @@ A user enters a number and a range of numbers are displayed, with certain number
   * **Example output: [Beep! Boop! 2 3]**
 * Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."
   * **Example input: 3**
-  * **Example output: [Beep! Boop! 2 [I'm sorry, Dave. I'm afraid I can't do that.]**
+  * **Example output: [Beep! Boop! 2 I'm sorry, Dave. I'm afraid I can't do that.]**
 * Program replaces entire number if it contains a 1 or a 0 with specified response (Beep! / Boop!)
   * **Example input: 11**
   * **Example output: [Boop!]**
