@@ -22,11 +22,11 @@ A user enters a number and a range of numbers are displayed, with certain number
 * Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."
   * Example input: 3
   * Example output: Beep! Boop! "I'm sorry, Dave. I'm afraid I can't do that."
-* Program replaces entire number if it contains a 1 or a 0 with specified respons (Beep! or Boop!)
+* Program replaces entire number if it contains a 1 or a 0 with specified response (Beep! / Boop!)
   * Example input: 12
   * Example output: Boop!
-  * Example input: 10
-  * Example output: 
+  * Example input: 20
+  * Example output: Beep!
 * Program only allows numbers to be input, and displays message to user if input is not a number.
   * Example input: Todd
   * Example output: BEEP! BOOP! Only numbers are allowed. Please enter a number.
@@ -46,7 +46,7 @@ A user enters a number and a range of numbers are displayed, with certain number
 
 ## Links
 
-* [Github Repo] - 
+* [Github Repo] - (https://github.com/atrotter0/beep-boop)
 * [Github Pages] - 
 
 ## License
