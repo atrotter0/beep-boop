@@ -6,7 +6,7 @@ function runBeepBoop(input) {
 
 function createNumberRange(number) {
   var numberRange = [];
-  for(var i = 0; i < number + 1; i++) {
+  for(var i = 0; i <= number; i++) {
     numberRange.push(i);
   }
   return numberRange;

@@ -30,6 +30,12 @@ A user enters a number and a range of numbers are displayed, with certain number
 * Program only allows numbers to be input, and displays message to user if input is not a number.
   * Example input: Todd
   * Example output: BEEP! BOOP! Only numbers are allowed. Please enter a number.
+* Program does not accept negative numbers.
+  * Example input: -2
+  * Example output: BEEP! BOOP! Only positive numbers are allowed. Please enter valid input.
+* Program does not accept special characters.
+  * Example input: 1.23.4^%&
+  * Example output: BEEP! BOOP! Only numbers are allowed. Please enter valid input.
 
 ## Setup/Contribution Requirements
 
