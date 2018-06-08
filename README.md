@@ -35,6 +35,7 @@ A user enters a number and a range of numbers are displayed, with certain number
 
 ## Technologies Used
 
+* HTML/CSS
 * Bootstrap 3.7.7
 * jQuery 3.3.1
 
