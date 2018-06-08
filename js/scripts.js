@@ -7,36 +7,43 @@ function createNumberRange(number) {
 }
 
 function runBeepBoop(numbers) {
-  numbers.forEach(function(number, index) {
-    if (divisibleBy3(number)) {
+  for(var i = 0; i < numbers.length; i++) {
+    if (divisibleBy3(numbers[i])) {
       newMessage = "I'm sorry, Dave. I'm afraid I can't do that.";
-      numbers[index] = newMessage;
-    } else if (numberIs(number, 0)) {
-      newMessage = "Beep!";
-      numbers[index] = newMessage;
-    } else if (numberIs(number, 1)) {
+      numbers[i] = newMessage;
+      continue;
+    } else if (numberContains(numbers[i], 1)) {
       newMessage = "Boop!";
-      numbers[index] = newMessage;
-    } else {
-      //do nothing
+      numbers[i] = newMessage;
+      continue;
+    } else if (numberContains(numbers[i], 0)) {
+      newMessage = "Beep!";
+      numbers[i] = newMessage;
     }
-  });
-  return numbers;
+  }
+  console.log(numbers);
+  return numbers.join(" ");
 }
 
 function divisibleBy3(number) {
   if (number % 3 === 0 && number !== 0) return true;
 }
 
-function numberIs(number, valueToCheck) {
-  if (number === valueToCheck) return true;
+function numberContains(number, valueToCheck) {
+  var numberString = number.toString();
+  if (numberString.includes(valueToCheck)) return true;
+}
+
+function displayResult(result) {
+  //
 }
 
 $(document).ready(function() {
   //var input = $("#input").val();
-  var input = 12;
+  var input = 30;
   var numbers = createNumberRange(input);
   console.log(numbers);
   var result = runBeepBoop(numbers);
+  displayResult(result);
   console.log(result);
 });
