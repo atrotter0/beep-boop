@@ -29,13 +29,13 @@ A user enters a number and a range of numbers are displayed, with certain number
   * **Example output: [Beep!]**
 * Program only allows numbers to be input, and displays message to user if input is not a number.
   * **Example input: Todd**
-  * **Example output: [Please enter valid input. Numbers should be greater than 0 and include no special characters.]**
+  * **Example output: [Please enter valid input. Input should be whole numbers greater than 0 and less than 9999, and include no special characters.]**
 * Program does not accept negative numbers.
   * **Example input: -2**
-  * **Example output: [Please enter valid input. Numbers should be greater than 0 and include no special characters.]**
+  * **Example output: [Please enter valid input. Input should be whole numbers greater than 0 and less than 9999, and include no special characters.]**
 * Program does not accept special characters.
   * **Example input: 1.23.4^%&**
-  * **Example output: [Please enter valid input. Numbers should be greater than 0 and include no special characters.]**
+  * **Example output: [Please enter valid input. Input should be whole numbers greater than 0 and less than 9999, and include no special characters.]**
 
 ## Setup/Contribution Requirements
 
