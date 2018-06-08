@@ -1,3 +1,8 @@
+function buildTooltipText() {
+  var text = 'Generates numbers 0 through user input and replaces numbers divisible by 30 with a famous quote. Replaces numbers containing a 1 with "Beep!". Replaces numbers containing a 0 with "Boop!"';
+  $("#specs-tip").attr("title", text);
+}
+
 function runBeepBoop(input) {
   var result = "";
   if (validateInput(input)) {
@@ -64,6 +69,9 @@ function randomAnimation(element) {
 }
 
 $(document).ready(function() {
+  buildTooltipText();
+  $('[data-toggle="tooltip"]').tooltip();
+
   $("#submit").click(function(e) {
     e.preventDefault();
 

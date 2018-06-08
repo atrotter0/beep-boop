@@ -28,6 +28,19 @@ h4 {
   max-width: 700px;
 }
 
+#specs-tip {
+  text-decoration: underline;
+}
+
+#specs-tip:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tooltip-inner {
+  text-align: left;
+}
+
 #input {
   font-family: 'Play', sans-serif;
   font-size: 2em;
