@@ -15,7 +15,6 @@ function runBeepBoop(input) {
 }
 
 function validateInput(input) {
-
   if (input !== "" && input >= 0 && input <= 9999 && !input.includes(".")) return true;
 }
 
@@ -58,16 +57,17 @@ function displayResult(result) {
   result = "[" + result + "]";
   $("#result-box").hide().fadeIn(1200);
   $("#result").text(result);
-  randomAnimation("#hal-image");
+  randomRotation("#hal-image");
 }
 
-function randomAnimation(element) {
+function randomRotation(element) {
   var rotationVal = Math.floor((Math.random() * 310) + 50);
   $(element).css("transform", "rotate(" + rotationVal + "deg)");
 }
 
 $(document).ready(function() {
   buildTooltipText();
+
   $('[data-toggle="tooltip"]').tooltip();
 
   $("#submit").click(function(e) {
