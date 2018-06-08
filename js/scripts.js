@@ -1,7 +1,15 @@
 function runBeepBoop(input) {
-  var numbers = createNumberRange(input);
-  var result = checkAndReplace(numbers);
+  if (validateInput(input)) {
+    var numbers = createNumberRange(input);
+    var result = checkAndReplace(numbers);
+  } else {
+    $("#result").text("Please enter valid input. Numbers should be greater than 0 and include no special characters.");
+  }
   return result;
+}
+
+function validateInput(input) {
+  if (input !== "" && input >= 0) return true;
 }
 
 function createNumberRange(number) {

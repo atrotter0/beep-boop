@@ -10,7 +10,7 @@ h1 {
 }
 
 h4 {
-  margin: 0 auto 20px auto;
+  margin: 30px auto;
   max-width: 800px;
 }
 
@@ -32,6 +32,7 @@ h4 {
 #result-box {
   display: none;
   max-height: 200px;
+  margin: 25px auto;
   overflow: scroll;
   padding: 5px;
 }
