@@ -11,8 +11,14 @@ function runBeepBoop(numbers) {
     if (divisibleBy3(number)) {
       newMessage = "I'm sorry, Dave. I'm afraid I can't do that.";
       numbers[index] = newMessage;
+    } else if (numberIs(number, 0)) {
+      newMessage = "Beep!";
+      numbers[index] = newMessage;
+    } else if (numberIs(number, 1)) {
+      newMessage = "Boop!";
+      numbers[index] = newMessage;
     } else {
-      //alert("You broke it...");
+      //do nothing
     }
   });
   return numbers;
@@ -20,6 +26,10 @@ function runBeepBoop(numbers) {
 
 function divisibleBy3(number) {
   if (number % 3 === 0 && number !== 0) return true;
+}
+
+function numberIs(number, valueToCheck) {
+  if (number === valueToCheck) return true;
 }
 
 $(document).ready(function() {
