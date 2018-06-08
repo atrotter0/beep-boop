@@ -1,15 +1,16 @@
 function runBeepBoop(input) {
+  var result = "";
   if (validateInput(input)) {
-    var numbers = createNumberRange(input);
-    var result = checkAndReplace(numbers);
+    var numbers = createNumberRange(parseInt(input));
+    result = checkAndReplace(numbers);
   } else {
-    $("#result").text("Please enter valid input. Numbers should be greater than 0 and include no special characters.");
+    result = "Please enter valid input. Numbers should be whole numbers greater than 0 and include no special characters.";
   }
   return result;
 }
 
 function validateInput(input) {
-  if (input !== "" && input >= 0) return true;
+  if (input !== "" && input >= 0 && !input.includes(".")) return true;
 }
 
 function createNumberRange(number) {
@@ -57,7 +58,7 @@ $(document).ready(function() {
   $("#submit").click(function(e) {
     e.preventDefault();
 
-    var input = parseInt($("#input").val());
+    var input = $("#input").val();
     var result = runBeepBoop(input);
     console.log(result);
     displayResult(result);
