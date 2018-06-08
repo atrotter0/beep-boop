@@ -11,41 +11,33 @@ h1 {
 
 h4 {
   margin: 0 auto 20px auto;
-  width: 80%;
   max-width: 800px;
-}
-
-#beep-boop {
-  width: 50%;
-  margin: 0 auto;
 }
 
 #input {
   font-size: 2em;
   height: 50px;
   margin: 10px 0;
-  width: 100%;
-  max-width: 500px;
-  min-width: 200px;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+}
+
+#submit:focus {
+  outline: none;
 }
 
 #result-box {
-  min-height: 50px;
+  display: none;
+  max-height: 200px;
+  overflow: scroll;
   padding: 5px;
 }
 
 #result {
   margin: 0 auto;
-  width: 80%;
-  max-width: 800px;
-  min-width: 300px;
-}
-
-#submit {
-  display: block;
-}
-
-#submit:focus {
-  outline: none;
+  padding: 0 10px 10px 10px;
 }
 
