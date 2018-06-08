@@ -4,13 +4,14 @@ function runBeepBoop(input) {
     var numbers = createNumberRange(parseInt(input));
     result = checkAndReplace(numbers);
   } else {
-    result = "Please enter valid input. Input should be whole numbers greater than 0 and include no special characters.";
+    result = "Please enter valid input. Input should be whole numbers greater than 0 and less than 9999, and include no special characters.";
   }
   return result;
 }
 
 function validateInput(input) {
-  if (input !== "" && input >= 0 && !input.includes(".")) return true;
+
+  if (input !== "" && input >= 0 && input <= 9999 && !input.includes(".")) return true;
 }
 
 function createNumberRange(number) {
@@ -52,7 +53,12 @@ function numberContains(number, valueToCheck) {
 function displayResult(result) {
   $("#result-box").hide().fadeIn(1200);
   $("#result").text(result);
-  $("#hal-image").toggleClass("rotate");
+  randomAnimation("#hal-image");
+}
+
+function randomAnimation(element) {
+  var rotationVal = Math.floor((Math.random() * 360) + 1);
+  $(element).css("transform", "rotate(" + rotationVal + "deg)");
 }
 
 $(document).ready(function() {

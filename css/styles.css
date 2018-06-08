@@ -1,29 +1,30 @@
 h1 {
   margin-bottom: 30px;
   text-align: center;
+  font-family: 'Geostar Fill', cursive;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px #ada4a4;
 }
 
 #hal-image {
+  box-shadow: 2px 2px 10px #4e4e4e;
   display: block;
   margin: 40px auto 40px auto;
   transition: 1s;
-  width: 20%;
-}
-
-.rotate {
-  transition: 1s;
-  -ms-transform: rotate(20deg); /* IE 9 */
-  -webkit-transform: rotate(20deg); /* Safari */
-  transform: rotate(20deg);
+  width: 30%;
 }
 
 h4 {
+  font-family: 'Play', sans-serif;
   margin: 30px auto;
   width: 80%;
   max-width: 700px;
 }
 
 #input {
+  font-family: 'Play', sans-serif;
   font-size: 2em;
   height: 50px;
   margin: 10px auto;
@@ -32,6 +33,7 @@ h4 {
 }
 
 #submit {
+  font-family: 'Play', sans-serif;
   display: block;
   margin: 0 auto;
 }
@@ -46,20 +48,37 @@ h4 {
   margin: 25px auto;
   overflow: scroll;
   padding: 5px;
+  width: 80%;
+  max-width: 700px;
 }
 
 #result {
+  font-family: 'Play', sans-serif;
   margin: 0 auto;
   padding: 0 10px 10px 10px;
 }
 
 /* responsive styles */
+@media screen and (max-width: 1000px) {
+  #hal-image {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #hal-image {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 600px) {
-  h4 {
+  h4, #input, #result-box {
     width: 100%;
   }
+}
 
-  #input {
+@media screen and (max-width: 500px) {
+  #hal-image {
     width: 100%;
   }
 }

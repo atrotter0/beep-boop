@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Geostar+Fill|Play|Press+Start+2P" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>Beep! Boop!</h1>
-      <img src="img/hal-9000.png" alt="Image of Hal from 2001: A Space Odyssey" id="hal-image">
+      <h1 class="text-shadow">Beep! Boop!</h1>
+      <img src="img/hal-9000.png" alt="Image of Hal from 2001: A Space Odyssey" class="img-circle" id="hal-image">
       <div class="alert alert-danger" id="result-box">
         <div id="result"></div>
       </div>
       <form id="beep-boop">
-        <h4>Enter a number into the field below to recieve a special message from HAL!</h4>
-        <input type="number" class="form-control" id="input">
+        <h4>Enter a number into the field below to recieve a special message from <span class="text-shadow">Hal</span>:</h4>
+        <input type="text" class="form-control" id="input" maxLength="4">
         <button type="submit" class="btn btn-default btn-lg" id="submit">Submit</button>
       </form>
     </div>
