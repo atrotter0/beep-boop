@@ -51,6 +51,7 @@ function numberContains(number, valueToCheck) {
 }
 
 function displayResult(result) {
+  result = "[" + result + "]";
   $("#result-box").hide().fadeIn(1200);
   $("#result").text(result);
   randomAnimation("#hal-image");
