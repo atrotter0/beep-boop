@@ -5,19 +5,30 @@ h1 {
 
 #hal-image {
   display: block;
-  margin: 40px auto 20px auto;
+  margin: 40px auto 40px auto;
+  transition: 1s;
   width: 20%;
+}
+
+.rotate {
+  transition: 1s;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(20deg); /* Safari */
+  transform: rotate(20deg);
 }
 
 h4 {
   margin: 30px auto;
-  max-width: 800px;
+  width: 80%;
+  max-width: 700px;
 }
 
 #input {
   font-size: 2em;
   height: 50px;
-  margin: 10px 0;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 700px;
 }
 
 #submit {
@@ -40,4 +51,15 @@ h4 {
 #result {
   margin: 0 auto;
   padding: 0 10px 10px 10px;
+}
+
+/* responsive styles */
+@media screen and (max-width: 600px) {
+  h4 {
+    width: 100%;
+  }
+
+  #input {
+    width: 100%;
+  }
 }

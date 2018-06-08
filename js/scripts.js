@@ -4,7 +4,7 @@ function runBeepBoop(input) {
     var numbers = createNumberRange(parseInt(input));
     result = checkAndReplace(numbers);
   } else {
-    result = "Please enter valid input. Numbers should be whole numbers greater than 0 and include no special characters.";
+    result = "Please enter valid input. Input should be whole numbers greater than 0 and include no special characters.";
   }
   return result;
 }
@@ -50,8 +50,9 @@ function numberContains(number, valueToCheck) {
 }
 
 function displayResult(result) {
-  $("#result-box").hide().fadeIn(800);
+  $("#result-box").hide().fadeIn(1200);
   $("#result").text(result);
+  $("#hal-image").toggleClass("rotate");
 }
 
 $(document).ready(function() {
