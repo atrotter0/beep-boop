@@ -1,5 +1,5 @@
 function buildTooltipText() {
-  var text = 'Generates numbers 0 through user input and replaces numbers divisible by 30 with a famous quote. Replaces numbers containing a 1 with "Beep!". Replaces numbers containing a 0 with "Boop!"';
+  var text = 'Generates numbers 0 through user input and replaces numbers divisible by 30 with a famous quote. Replaces numbers containing a 1 with "Boop!". Replaces numbers containing a 0 with "Beep!"';
   $("#specs-tip").attr("title", text);
 }
 
