@@ -1,6 +1,6 @@
 # Beep! Boop!
 
-#### Epicodus Intro to Programming independent project, 06.08.2018
+#### Epicodus Intro to Programming Independent Project, 06.08.2018
 
 #### By Abel Trotter
 
@@ -47,6 +47,7 @@ A user enters a number and a range of numbers are displayed, with certain number
 ## Technologies Used
 
 * HTML/CSS
+* JavaScript
 * Bootstrap 3.7.7
 * jQuery 3.3.1
 
